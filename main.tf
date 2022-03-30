@@ -52,7 +52,7 @@ resource "vault_generic_secret" "github_token" {
   data_json = <<EOT
 {
   "password":   "${var.g_token}",
-  "username": "lek-x"
+  "username": "${var.username}"
 }
 EOT
 }
@@ -64,7 +64,7 @@ resource "vault_generic_secret" "github_pass" {
   data_json = <<EOT
 {
   "password":  "${var.g_pass}",
-  "username": "lek-x"
+  "username": "{var.username}"
 }
 EOT
 }

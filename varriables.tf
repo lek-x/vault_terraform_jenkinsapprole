@@ -11,3 +11,10 @@ variable "g_pass" {
 variable "g_token" {
     type = string
 }
+
+
+variable "username" {
+    type = string
+    default = "lek-x"
+}
+
